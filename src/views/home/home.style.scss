@@ -1,0 +1,30 @@
+$dark-0: #262423;
+$light-0: #F2F2F2;
+
+section.home-view {
+  position: relative;
+  transition: background .2s ease-out;
+
+  & > * {
+    max-width: 100rem;
+    margin-inline: auto;
+  }
+}
+
+section.home-view.dark {
+  background: $dark-0;
+
+  &,
+  * {
+    color: $light-0;
+  }
+}
+
+section.home-view.light {
+  background: $light-0;
+
+  &,
+  * {
+    color: $dark-0;
+  }
+}

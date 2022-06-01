@@ -13,7 +13,7 @@ export default {
   mutations: {
     nextColorScheme(state) {
       id = ( id + 1 ) % color_schemes.length
-      state.code = color_schemes[id]
+      state.current = color_schemes[id]
     }
   },
 
