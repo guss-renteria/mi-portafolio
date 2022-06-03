@@ -1,0 +1,274 @@
+$black: #0D0C0B;
+$dark-1: #595654;
+$light-1: #8C8987;
+
+$green-0: #5FD068;
+$yellow-0: #F7D716;
+$card-about-me-dark: rgba($dark-1, .1);
+$card-about-me-light: rgba($light-1, .1);
+
+div.about-me-comp {
+  padding-bottom: 8rem;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  div.about-me-container {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      margin-top: 6rem;
+      font-size: 2.4rem;
+    }
+
+    p.cite {
+      margin-top: 2rem;
+
+      font-size: 1.8rem;
+      font-style: normal;
+      line-height: 2.4rem;
+      letter-spacing: .1rem;
+    }
+
+    div.contact {
+      width: 100%;
+      margin-top: 2rem;
+      flex: 1;
+
+      display: flex;
+      align-items: flex-end;
+
+      font-size: 2rem;
+
+      div.contact-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        a[class*='icon'] {
+          text-decoration: none;
+          margin-left: 1.6rem;
+          padding: .4rem;
+
+          font-size: 2.6rem;
+
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  div.about-me-skills {
+    width: 100%;
+    padding: 6rem 2rem 0;
+
+    div.front-end-skills {
+      padding: 2rem;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      border-radius: .4rem;
+
+      h3 {
+        width: 100%;
+        margin-bottom: 2rem;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      div.col {
+        div.skill {
+          padding: 1.6rem 1rem;
+          font-size: 1.5rem;
+
+          h4 {
+            margin-left: .8rem;
+            display: inline-block;
+          }
+          
+          p {
+            margin-top: .4rem;
+          }
+
+          span[class*='caret-up'] {
+            color: $green-0;
+          }
+          span[class*='caret-right'] {
+            color: $yellow-0;
+          }
+        }
+      }
+    }
+    
+    div.back-end-skills {
+      margin-top: 4rem;
+      padding: 2rem;
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      border-radius: .4rem;
+
+      h3 {
+        width: 100%;
+        margin-bottom: 2rem;
+        
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      div.skill {
+        padding: 1.6rem 1rem;
+        font-size: 1.5rem;
+
+        h4 {
+          margin-left: .8rem;
+          display: inline-block;
+        }
+        
+        p {
+          margin-top: .4rem;
+        }
+
+        span[class*='caret-up'] {
+          color: $green-0;
+        }
+        span[class*='caret-right'] {
+          color: $yellow-0;
+        }
+      }
+    }
+  }
+}
+
+div.about-me-comp.dark {
+  div.about-me-container {
+    h2 {
+      color: $light-1 !important;
+    }
+
+    div.contact {
+      div.contact-container {
+        color: $light-1;
+        a[class*='icon'] {
+          color: $light-1;
+          text-shadow: -.2rem .2rem .4rem $black;
+        }
+      }
+    }
+  }
+  div.about-me-skills {
+    div.front-end-skills {
+      background: $card-about-me-dark;
+
+      h3 {
+        color: $light-1;
+      }
+
+      div.col {
+        div.skill {
+          p {
+            color: $light-1
+          }
+        }
+      }
+    }
+
+    div.back-end-skills {
+      background: $card-about-me-dark;
+
+      h3 {
+        color: $light-1;
+      }
+
+      div.skill {
+        p {
+          color: $light-1
+        }
+      }
+    }
+  }
+}
+
+div.about-me-comp.light {
+  div.about-me-container {
+    h2 {
+      color: $dark-1 !important;
+    }
+
+    div.contact {
+      div.contact-container {
+        color: $dark-1;
+        a[class*='icon'] {
+          color: $dark-1;
+          text-shadow: -.2rem .2rem .2rem $card-about-me-dark;
+        }
+      }
+    }
+  }
+  div.about-me-skills {
+    div.front-end-skills {
+      background: $card-about-me-light;
+
+      h3 {
+        color: $dark-1;
+      }
+
+      div.col {
+        div.skill {
+          p {
+            color: $dark-1
+          }
+        }
+      }
+    }
+
+    div.back-end-skills {
+      background: $card-about-me-light;
+
+      h3 {
+        color: $dark-1;
+      }
+
+      div.skill {
+        p {
+          color: $dark-1
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  div.about-me-comp {
+    h2 {
+    }
+
+    div.about-me-container {
+      flex: 1;
+
+      display: flex;
+    }
+
+    div.about-me-skills {
+      flex: 1.5;
+      width: auto;
+      padding-top: 0;
+    }
+  }
+}
