@@ -2,12 +2,14 @@
 import Intro from '@/components/intro/intro.component.vue'
 import AboutMe from '@/components/about_me/about_me.component.vue'
 import Projects from '@/components/projects/projects.component.vue'
+import Footer from '@/components/footer/footer.component.vue'
 
 export default {
   components: {
     Intro,
     AboutMe,
     Projects,
+    Footer,
   },
   computed: {
     color_scheme() {
@@ -19,10 +21,11 @@ export default {
 
 
 <template>
-  <section :class='`home-view ${ color_scheme }`'>
+  <section id='Intro' :class='`home-view ${ color_scheme }`'>
     <Intro />
     <AboutMe />
     <Projects />
+    <Footer />
   </section>
 </template>
 

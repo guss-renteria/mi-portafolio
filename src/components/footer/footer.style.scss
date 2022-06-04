@@ -1,0 +1,84 @@
+$black: #0D0C0B;
+$dark-0: #262423;
+$dark-1: #595654;
+$light-0: #F2F2F2;
+$light-1: #8C8987;
+
+$footer-dark: rgba($black, .1);
+$footer-light: rgba($light-1, .1);
+
+div.footer-comp {
+  width: 100%;
+  max-width: 100% !important;
+  padding: 2rem 0 8rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  div.nav-footer {
+    display: inline-block;
+
+    a {
+      padding: .2rem;
+      display: block;
+
+      font-size: 1.6rem;
+      font-weight: 300;
+      text-decoration: none;
+      text-align: center;
+      line-height: 3rem;
+
+      transition: color .2s ease;
+    }
+  }
+
+  h2 {
+    margin-top: 6rem;
+    font-size: 3.6rem;
+    text-align: center;
+    letter-spacing: .2rem;
+  }
+
+  div.contact-me {
+    min-width: 12rem;
+    margin-inline: auto;
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    a[class*='icon'] {
+      font-size: 2.8rem;
+      text-decoration: none;
+    }
+  }
+}
+
+div.footer-comp.dark {
+  background: $footer-dark;
+
+  div.nav-footer {
+    a {
+      color: $light-1;
+
+      &:hover {
+        color: $light-0;
+      }
+    }
+  }
+}
+
+div.footer-comp.light {
+  background: $footer-light;
+
+  div.nav-footer {
+    a {
+      color: $dark-1;
+
+      &:hover {
+        color: $dark-0;
+      }
+    }
+  }
+}

@@ -11,16 +11,18 @@ $tag-dark: rgba($light-0, .05);
 $tag-light: rgba($dark-0, .05);
 
 div.projects-comp {
+  padding-top: 2rem;
   padding-bottom: 8rem;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
 
   h2 {
-    flex: 1;
-    font-size: 2rem;
     margin-bottom: 6rem;
     padding: 0 2rem;
+
+    flex: 1;
+    font-size: 2.5rem;
   }
 
   div.project-container {
@@ -61,12 +63,13 @@ div.projects-comp {
           }
 
           div.links {
-            margin-top: .5rem;
+            margin-top: .2rem;
 
             a {
               padding: .4rem;
               margin-left: 1rem;
-              font-size: 1.8rem;
+
+              font-size: 2.4rem;
               text-decoration: none;
             }
           }
@@ -107,7 +110,6 @@ div.projects-comp {
     transition: opacity .2s ease;
 
     &:hover {
-      text-decoration: underline;
       opacity: .6;
     }
   }
@@ -116,7 +118,6 @@ div.projects-comp {
 div.projects-comp.dark {
   h2 {
     color: $light-1 !important;
-    font-size: 2rem;
   }
 
   div.project-container {
@@ -148,7 +149,6 @@ div.projects-comp.dark {
 div.projects-comp.light {
   h2 {
     color: $dark-1 !important;
-    font-size: 2rem;
   }
 
   div.project-container {

@@ -27,7 +27,7 @@ export default {
 </script>
 
 <template>
-  <div :class='`projects-comp ${ color_scheme }`'>
+  <div id='Projects' :class='`projects-comp ${ color_scheme }`'>
     <h2>~ Proyectos</h2>
 
     <div class='project-container'>

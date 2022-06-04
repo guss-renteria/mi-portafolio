@@ -27,7 +27,7 @@ export default {
 </script>
 
 <template>
-  <div :class='`about-me-comp ${ color_scheme }`'>
+  <div id='About-me' :class='`about-me-comp ${ color_scheme }`'>
     <div class='about-me-container'>
       <h2>~ Acerca de mí</h2>
       <h3>Gustavo Rentería</h3>

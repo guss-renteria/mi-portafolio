@@ -8,6 +8,7 @@ $card-about-me-dark: rgba($dark-1, .1);
 $card-about-me-light: rgba($light-1, .1);
 
 div.about-me-comp {
+  padding-top: 2rem;
   padding-bottom: 8rem;
 
   display: flex;
@@ -19,7 +20,7 @@ div.about-me-comp {
     flex-direction: column;
 
     h2 {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
 
     h3 {
@@ -91,7 +92,7 @@ div.about-me-comp {
       div.col {
         div.skill {
           padding: 1.6rem 1rem;
-          font-size: 1.5rem;
+          font-size: 1.6rem;
 
           h4 {
             margin-left: .8rem;
@@ -135,7 +136,7 @@ div.about-me-comp {
 
       div.skill {
         padding: 1.6rem 1rem;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
 
         h4 {
           margin-left: .8rem;

@@ -1,7 +1,7 @@
 <script>
 export default {
   mounted() {
-    setInterval(this.animName, 5000)
+    setInterval(this.animName, 2000)
   },
   methods: {
     animName() {
@@ -27,7 +27,7 @@ export default {
 </script>
 
 <template>
-  <div :class='`intro-comp ${ color_scheme }`'>
+  <div id='Home' :class='`intro-comp ${ color_scheme }`'>
     <button class='switch-scheme' @click='nextColorScheme'>
       <span class='icon-dark-theme'></span>
       <span class='icon-light-theme'></span>
