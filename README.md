@@ -3,7 +3,7 @@
 Este proyecto se creo usando [Vite](https://vitejs.dev/), con la plantilla de [Vue](https://vuejs.org/).
 
 #### **[+] Preview**
-[github-pages]()
+[github-pages](https://guss-renteria.github.io/mi-portafolio/)
 
 #### **[+] Scripts disponibles**
 ```shell
