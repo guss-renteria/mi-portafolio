@@ -1,7 +1,24 @@
-# Vue 3 + Vite
+# **Mi portafolio**
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Este proyecto se creo usando [Vite](https://vitejs.dev/), con la plantilla de [Vue](https://vuejs.org/).
 
-## Recommended IDE Setup
+#### **[+] Preview**
+[github-pages]()
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+#### **[+] Scripts disponibles**
+```shell
+yarn dev
+```
+
+Ejecuta la aplicación en el modo de desarrollo.\
+Abra [http://localhost:3000](http://localhost:3000) para verlo en su navegador.
+
+```shell
+yarn build
+```
+
+Construye la aplicación en la carpeta `dist`.\
+Empaqueta correctamente 'Vue' en modo de producción y optimiza la compilación para obtener el mejor rendimiento.
+
+#### **[+] Screenshot**
+![mi-portafolio](./screenshot/screenshot.png "mi-portafolio")
