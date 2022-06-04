@@ -1,4 +1,6 @@
 $black: #0D0C0B;
+$dark-0: #262423;
+$light-0: #F2F2F2;
 $dark-1: #595654;
 $light-1: #8C8987;
 
@@ -104,10 +106,34 @@ div.about-me-comp {
           }
 
           span[class*='caret-up'] {
+            display: inline-block;
             color: $green-0;
+
+            animation: caret-up-anim 1s ease-in-out infinite;
+
+            @keyframes caret-up-anim {
+              from {
+                text-shadow: 0 0 0 $green-0;
+              }
+              to {
+                text-shadow: 0 -1rem 0 transparent;
+              }
+            }
           }
           span[class*='caret-right'] {
+            display: inline-block;
             color: $yellow-0;
+
+            animation: caret-right-anim 1s ease-in-out infinite;
+
+            @keyframes caret-right-anim {
+              from {
+                text-shadow: 0 0 0 $yellow-0;
+              }
+              to {
+                text-shadow: 0 0 1.6rem transparent;
+              }
+            }
           }
         }
       }
@@ -149,9 +175,31 @@ div.about-me-comp {
 
         span[class*='caret-up'] {
           color: $green-0;
+
+          animation: caret-up-anim 1s ease-in-out infinite;
+
+          @keyframes caret-up-anim {
+            from {
+              text-shadow: 0 0 0 $green-0;
+            }
+            to {
+              text-shadow: 0 -1rem 0 transparent;
+            }
+          }
         }
         span[class*='caret-right'] {
           color: $yellow-0;
+
+          animation: caret-right-anim 1s ease-in-out infinite;
+
+          @keyframes caret-right-anim {
+            from {
+              text-shadow: 0 0 0 $yellow-0;
+            }
+            to {
+              text-shadow: 0 0 1.6rem transparent;
+            }
+          }
         }
       }
     }
@@ -159,6 +207,12 @@ div.about-me-comp {
 }
 
 div.about-me-comp.dark {
+  * {
+    &::selection {
+      background: rgba($black, .5);
+    }
+  }
+
   div.about-me-container {
     h2 {
       color: $light-1 !important;
@@ -170,6 +224,12 @@ div.about-me-comp.dark {
         a[class*='icon'] {
           color: $light-1;
           text-shadow: -.2rem .2rem .4rem $black;
+
+          transition: color .2s ease;
+
+          &:hover {
+            color: $light-0;
+          }
         }
       }
     }
@@ -177,7 +237,7 @@ div.about-me-comp.dark {
   div.about-me-skills {
     div.front-end-skills {
       background: $card-about-me-dark;
-
+      
       h3 {
         color: $light-1;
       }
@@ -208,6 +268,12 @@ div.about-me-comp.dark {
 }
 
 div.about-me-comp.light {
+  * {
+    &::selection {
+      background: rgba($black, .2);
+    }
+  }
+
   div.about-me-container {
     h2 {
       color: $dark-1 !important;
@@ -219,6 +285,12 @@ div.about-me-comp.light {
         a[class*='icon'] {
           color: $dark-1;
           text-shadow: -.2rem .2rem .2rem $card-about-me-dark;
+
+          transition: color .2s ease;
+
+          &:hover {
+            color: $black;
+          }
         }
       }
     }
@@ -255,6 +327,7 @@ div.about-me-comp.light {
     }
   }
 }
+
 @media screen and (min-width: 768px) {
   div.about-me-comp {
     h2 {

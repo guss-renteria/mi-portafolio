@@ -20,6 +20,7 @@ export default {
 
     <div class='contact-me'>
       <a href='https://www.linkedin.com/in/gustavo-renter%C3%ADa-317577238/' target='_blank' rel='noopener noreferrer' class='icon-linkedin'></a>
+      <a href='https://github.com/guss-renteria' target='_blank' rel='noopener noreferrer' class='icon-github-alt'></a>
       <a href='https://api.whatsapp.com/send?phone=523321469421&text=hola,%20qué%20tal?' target='_blank' rel='noopener noreferrer' class='icon-whatsapp'></a>
     </div>
   </div>

@@ -36,8 +36,8 @@ export default {
       <div class='contact'>
         <div class='contact-container'>
           contactame ~ 
-          <a href='https://github.com/guss-renteria' target='_blank' rel='noopener noreferrer' class='icon-github-alt'></a>
-          <a href='#' class='icon-linkedin'></a>
+          <a href='https://www.linkedin.com/in/gustavo-renter%C3%ADa-317577238/' class='icon-linkedin'></a>
+          <a href='https://api.whatsapp.com/send?phone=523321469421&text=hola,%20qué%20tal?' target='_blank' rel='noopener noreferrer' class='icon-whatsapp'></a>
         </div>
       </div>
     </div>

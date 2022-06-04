@@ -41,7 +41,7 @@ div.footer-comp {
   }
 
   div.contact-me {
-    min-width: 12rem;
+    min-width: 16rem;
     margin-inline: auto;
     margin-top: 2rem;
 
@@ -51,12 +51,24 @@ div.footer-comp {
     a[class*='icon'] {
       font-size: 2.8rem;
       text-decoration: none;
+
+      transition: opacity .2s ease;
+
+      &:hover {
+        opacity: .6;
+      }
     }
   }
 }
 
 div.footer-comp.dark {
   background: $footer-dark;
+
+  * {
+    &::selection {
+      background: rgba($black, .5);
+    }
+  }
 
   div.nav-footer {
     a {
@@ -71,6 +83,12 @@ div.footer-comp.dark {
 
 div.footer-comp.light {
   background: $footer-light;
+
+  * {
+    &::selection {
+      background: rgba($black, .2);
+    }
+  }
 
   div.nav-footer {
     a {

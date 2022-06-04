@@ -34,11 +34,23 @@ div.intro-comp {
     span[class*='icon'] {
       opacity: 0;
       position: absolute;
+
       transform: scale(.75);
       transition: .2s ease;
       transition-property: opacity transform;
 
+      animation: switch-anim 1s ease-in-out alternate infinite;
+
       font-size: 2.4rem;
+
+      @keyframes switch-anim {
+        from {
+          transform: rotate(10deg);
+        }
+        to {
+          transform: rotate(-10deg);
+        }
+      }
     }
   }
 
@@ -86,6 +98,60 @@ div.intro-comp {
           }
         }
       }
+
+      &:hover {
+        & > span {
+          &:nth-child(1) {
+            animation: expand-letter-0 1s ease-in-out alternate infinite;
+          }
+          &:nth-child(2) {
+            animation: expand-letter-1 .5s ease-in-out alternate infinite;
+          }
+          &:nth-child(3) {
+            animation: expand-letter-2 1.3s ease-in-out alternate infinite;
+          }
+          &:nth-child(4) {
+            animation: expand-letter-0 .6s ease-in-out alternate infinite;
+          }
+          &:nth-child(5) {
+            animation: expand-letter-1 .8s ease-in-out alternate infinite;
+          }
+          &:nth-child(6) {
+            animation: expand-letter-2 1s ease-in-out alternate infinite;
+          }
+          &:nth-child(7) {
+            animation: expand-letter-0 1.2s ease-in-out alternate infinite;
+          }
+          &:nth-child(8) {
+            animation: expand-letter-1 .6s ease-in-out alternate infinite;
+          }
+
+          @keyframes expand-letter-0 {
+            10% {
+              transform: rotate(10deg);
+            }
+            100% {
+              transform: rotate(-10deg);
+            }
+          }
+          @keyframes expand-letter-1 {
+            10% {
+              transform: rotate(-15deg);
+            }
+            100% {
+              transform: rotate(5deg);
+            }
+          }
+          @keyframes expand-letter-2 {
+            10% {
+              transform: rotate(15deg);
+            }
+            100% {
+              transform: rotate(-5deg);
+            }
+          }
+        }
+      }
     }
     p.service {
       transition: color .2s ease;
@@ -93,6 +159,10 @@ div.intro-comp {
       text-align: right;
       font-size: 1.8rem;
       font-weight: 600;
+      
+      &::selection {
+        background: transparent;
+      }
     }
   }
 }

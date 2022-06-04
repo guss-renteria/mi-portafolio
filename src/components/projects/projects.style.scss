@@ -71,6 +71,12 @@ div.projects-comp {
 
               font-size: 2.4rem;
               text-decoration: none;
+
+              transition: opacity .2s ease;
+
+              &:hover {
+                opacity: .6;
+              }
             }
           }
         }
@@ -116,6 +122,12 @@ div.projects-comp {
 }
 
 div.projects-comp.dark {
+  * {
+    &::selection {
+      background: rgba($black, .5);
+    }
+  }
+
   h2 {
     color: $light-1 !important;
   }
@@ -147,6 +159,12 @@ div.projects-comp.dark {
 }
 
 div.projects-comp.light {
+  * {
+    &::selection {
+      background: rgba($black, .2);
+    }
+  }
+
   h2 {
     color: $dark-1 !important;
   }

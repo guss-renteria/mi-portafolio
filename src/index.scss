@@ -13,8 +13,28 @@ $light-1: #8C8987;
   -webkit-tap-highlight-color: transparent;
 }
 html {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
   font-size: .625rem;
   scroll-behavior: smooth;
+
+  &::-webkit-scrollbar-track {
+    border-radius: 1rem;
+  }
+  &::-webkit-scrollbar:vertical {
+    width:1.2rem;
+  }
+  &::-webkit-scrollbar-track-piece {
+    background: $dark-1;
+  }
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $light-1;
+    border-radius: .4rem;
+  }
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
