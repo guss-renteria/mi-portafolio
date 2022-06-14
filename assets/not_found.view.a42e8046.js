@@ -1,1 +1,0 @@
-import{_ as o,o as e,c as t,a as n}from"./index.69c029b9.js";const s={},c={class:"not-found"},_=n("h1",null,"Not found",-1),a=[_];function r(d,f){return e(),t("section",c,a)}var l=o(s,[["render",r]]);export{l as default};
